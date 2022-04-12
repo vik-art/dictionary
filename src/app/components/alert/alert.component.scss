@@ -1,0 +1,19 @@
+.alert-container {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 350px;
+    height: 100px;
+    display: flex;
+    padding: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #f4f4f4;
+}
+.success {
+    background: linear-gradient(to top, black, rgb(38, 189, 18));
+}
+.error {
+    background: linear-gradient(to top, black, rgb(236, 51, 18));
+}

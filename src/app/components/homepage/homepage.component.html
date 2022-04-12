@@ -1,0 +1,13 @@
+<div class="main-container">
+  <div class="main-container-wrapper">
+    <div class="form-container">
+    <form class="search-form" [formGroup]="form" (ngSubmit)="submit()">
+      <label for="search-field">
+      <input formControlName="query" type="text" class="search-input" id="search-field" placeholder="Enter the word">
+      </label>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+    </div>
+    <app-word *ngIf="showResults" [words]="words"></app-word>
+    </div>
+  </div>

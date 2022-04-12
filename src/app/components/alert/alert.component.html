@@ -1,0 +1,6 @@
+<div class="alert-container" *ngIf="text" [ngClass]="{
+    'success': type === 'success',
+    'error': type === 'error'
+}">
+<p>{{text}}</p>
+</div>

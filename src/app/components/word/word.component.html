@@ -1,0 +1,26 @@
+<div class="container">
+    <ul class="card-list">
+        <li *ngFor="let word of words let idx = index" class="card-list-item">
+            <div class="item-container">
+            <h2>{{word.word | uppercase}} - meaning № {{idx + 1}}</h2>
+            <p class="arrow">&#11191;</p>
+            </div>
+            <div class="item-details">
+                <div *ngFor="let phonetic of word.phonetics">
+                <p class="details-text">{{phonetic.text}}</p>
+                <audio class="audio" controls src={{phonetic.audio}}>
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+                </div>
+                <div *ngFor="let item of word.meanings">
+                    <p class="part-of-speech">Part Of Speech: {{item.partOfSpeech}}</p>
+                   
+                    <p *ngFor="let definition of item.definitions" class="definitions">
+                        <img src="assets/mark.png" alt="mark">
+                        {{definition.definition}}</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
