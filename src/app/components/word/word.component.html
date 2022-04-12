@@ -3,7 +3,9 @@
         <li *ngFor="let word of words let idx = index" class="card-list-item">
             <div class="item-container">
             <h2>{{word.word | uppercase}} - meaning № {{idx + 1}}</h2>
-            <p class="arrow">&#11191;</p>
+            <p class="arrow">
+                <img src="assets/arrow.png" alt="arror">
+            </p>
             </div>
             <div class="item-details">
                 <div *ngFor="let phonetic of word.phonetics">

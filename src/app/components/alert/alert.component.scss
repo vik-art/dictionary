@@ -10,10 +10,21 @@
     align-items: center;
     justify-content: center;
     color: #f4f4f4;
+    opacity: 0;
+    animation: alert 1.5s forwards;
 }
 .success {
-    background: linear-gradient(to top, black, rgb(38, 189, 18));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(162, 236, 152, 0.6));
 }
 .error {
-    background: linear-gradient(to top, black, rgb(236, 51, 18));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgb(233, 62, 36));
+}
+
+@keyframes alert {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
