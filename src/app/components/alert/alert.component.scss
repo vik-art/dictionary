@@ -12,6 +12,7 @@
     color: #f4f4f4;
     opacity: 0;
     animation: alert 1.5s forwards;
+    z-index: 2;
 }
 .success {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(162, 236, 152, 0.6));
